@@ -12,4 +12,26 @@
     <string name="login_success">Iniciando sesión con usuario y contraseña</string>
     <string name="login_google_message">Iniciando sesión con Google</string>
     <string name="login_facebook_message">Iniciando sesión con Facebook</string>
+    <string name="inicio_menu_inicio">Inicio</string>
+    <string name="inicio_menu_explorar">Explorar</string>
+    <string name="inicio_menu_impacto">Impacto</string>
+    <string name="inicio_title">Dona un libro,</string>
+    <string name="inicio_subtitle">abre una puerta.</string>
+    <string name="inicio_share">Compartir un libro</string>
+    <string name="inicio_find">Encontrar un libro</string>
+    <string name="inicio_badge_safe">Plataforma segura</string>
+    <string name="inicio_badge_fast">Gratis y rápido</string>
+    <string name="inicio_badge_impact">Impacto real</string>
+    <string name="inicio_card_books_icon">📚</string>
+    <string name="inicio_books_count">6</string>
+    <string name="inicio_books_label">libros disponibles</string>
+    <string name="inicio_card_gift_icon">🎁</string>
+    <string name="inicio_donated_count">2</string>
+    <string name="inicio_donated_label">libros donados</string>
+    <string name="inicio_card_impact_icon">🌱</string>
+    <string name="inicio_impact_count">∞</string>
+    <string name="inicio_impact_label">vidas impactadas</string>
+    <string name="inicio_card_posts_icon">✍</string>
+    <string name="inicio_posts_count">12</string>
+    <string name="inicio_posts_label">mis publicaciones</string>
 </resources>

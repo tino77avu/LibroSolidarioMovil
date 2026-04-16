@@ -8,4 +8,7 @@
     <color name="brand_stroke">#DCE4DF</color>
     <color name="brand_text_title">#13201A</color>
     <color name="brand_text_body">#597167</color>
+    <color name="brand_card_soft_yellow">#F7F1DD</color>
+    <color name="brand_card_soft_mint">#DDF3EC</color>
+    <color name="brand_card_soft_blue">#E3EBF8</color>
 </resources>

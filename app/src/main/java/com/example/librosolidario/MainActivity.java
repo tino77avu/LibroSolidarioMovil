@@ -1,5 +1,6 @@
 package com.example.librosolidario;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -28,9 +29,10 @@ public class MainActivity extends AppCompatActivity {
         MaterialButton btnGoogle = findViewById(R.id.btnGoogle);
         MaterialButton btnFacebook = findViewById(R.id.btnFacebook);
 
-        btnLogin.setOnClickListener(v ->
-            Toast.makeText(this, getString(R.string.login_success), Toast.LENGTH_SHORT).show()
-        );
+        btnLogin.setOnClickListener(v -> {
+            Toast.makeText(this, getString(R.string.login_success), Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this, InicioActivity.class));
+        });
 
         btnGoogle.setOnClickListener(v ->
             Toast.makeText(this, getString(R.string.login_google_message), Toast.LENGTH_SHORT).show()
