@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LibroSolidario</string>
+    <string name="login_badge">Plataforma solidaria de libros</string>
+    <string name="login_title">Bienvenido a LibroSolidario</string>
+    <string name="login_subtitle">Conecta donantes con estudiantes, bibliotecas y organizaciones en minutos.</string>
+    <string name="login_username">Usuario o correo</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_action">Iniciar sesión</string>
+    <string name="login_or">o continúa con</string>
+    <string name="login_google">Entrar con Google</string>
+    <string name="login_facebook">Entrar con Facebook</string>
+    <string name="login_success">Iniciando sesión con usuario y contraseña</string>
+    <string name="login_google_message">Iniciando sesión con Google</string>
+    <string name="login_facebook_message">Iniciando sesión con Facebook</string>
+</resources>
