@@ -7,4 +7,10 @@
     </style>
 
     <style name="Theme.LibroSolidario" parent="Base.Theme.LibroSolidario" />
+
+    <style name="Theme.LibroSolidario.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.LibroSolidario</item>
+    </style>
 </resources>
