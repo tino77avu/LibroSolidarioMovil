@@ -10,23 +10,22 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class ExplorarActivity extends AppCompatActivity {
+public class MiPanelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_explorar);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.explorarRoot), (v, insets) -> {
+        setContentView(R.layout.activity_mi_panel);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.panelRoot), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        MaterialButton btnBackExplorar = findViewById(R.id.btnBackExplorar);
-        MaterialButton btnMenuExplorar = findViewById(R.id.btnMenuExplorar);
-
-        btnBackExplorar.setOnClickListener(v -> finish());
-        btnMenuExplorar.setOnClickListener(v -> NavigationMenuHelper.show(this, v));
+        MaterialButton btnBack = findViewById(R.id.btnBackPanel);
+        MaterialButton btnMenu = findViewById(R.id.btnMenuPanel);
+        btnBack.setOnClickListener(v -> finish());
+        btnMenu.setOnClickListener(v -> NavigationMenuHelper.show(this, v));
     }
 }

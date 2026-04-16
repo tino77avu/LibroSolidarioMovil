@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LibroSolidario">
         <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImpactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiPanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExplorarActivity"
             android:exported="false" />
         <activity

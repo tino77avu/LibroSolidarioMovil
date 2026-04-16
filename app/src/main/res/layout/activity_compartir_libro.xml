@@ -38,9 +38,10 @@
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:minWidth="0dp"
-                    android:text="@string/share_menu_icon"
+                    android:text=""
                     android:textAllCaps="false"
-                    android:textSize="18sp"
+                    app:icon="@android:drawable/ic_menu_sort_by_size"
+                    app:iconTint="@color/black"
                     app:cornerRadius="14dp"
                     app:strokeColor="@color/brand_stroke"
                     app:strokeWidth="1dp" />
