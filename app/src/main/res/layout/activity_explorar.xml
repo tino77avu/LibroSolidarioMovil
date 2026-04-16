@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explorarRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_background"
+    tools:context=".ExplorarActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_title"
+                android:textColor="@color/brand_text_title"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_subtitle"
+                android:textColor="@color/brand_text_body"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                app:boxCornerRadiusBottomStart="18dp"
+                app:boxCornerRadiusTopEnd="18dp"
+                app:boxCornerRadiusTopStart="18dp"
+                app:startIconDrawable="@android:drawable/ic_menu_search">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/explore_search_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_chip_selected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_todos"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_educacion"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_literatura"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_infantil"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_ciencia"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_historia"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_arte"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_tecnologia"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_idiomas"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_autoayuda"
+                        android:textColor="@color/brand_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/shape_chip_unselected"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/explore_cat_otro"
+                        android:textColor="@color/brand_text_body" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/brand_surface"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/brand_stroke"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="@drawable/shape_cover_1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|start"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/shape_badge"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="@string/explore_meta_status"
+                                    android:textColor="@color/brand_primary"
+                                    android:textSize="11sp" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/explore_card_1_cat"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="@string/explore_meta_condition"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_1_title"
+                                    android:textColor="@color/brand_text_title"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_1_author"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:text="@string/explore_meta_location_1"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:cardBackgroundColor="@color/brand_surface"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/brand_stroke"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="@drawable/shape_cover_2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|start"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/shape_badge"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="@string/explore_meta_status"
+                                    android:textColor="@color/brand_primary"
+                                    android:textSize="11sp" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/explore_card_2_cat"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_2_title"
+                                    android:textColor="@color/brand_text_title"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_2_author"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:text="@string/explore_meta_location_2"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:cardBackgroundColor="@color/brand_surface"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/brand_stroke"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="@drawable/shape_cover_3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|start"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/shape_badge"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="@string/explore_meta_status"
+                                    android:textColor="@color/brand_primary"
+                                    android:textSize="11sp" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/explore_card_3_cat"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_3_title"
+                                    android:textColor="@color/brand_text_title"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_3_author"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:text="@string/explore_meta_location_3"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:cardBackgroundColor="@color/brand_surface"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/brand_stroke"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="@drawable/shape_cover_4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|start"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/shape_badge"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="@string/explore_meta_status"
+                                    android:textColor="@color/brand_primary"
+                                    android:textSize="11sp" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/explore_card_4_cat"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_4_title"
+                                    android:textColor="@color/brand_text_title"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/explore_card_4_author"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:text="@string/explore_meta_location_4"
+                                    android:textColor="@color/brand_text_body"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
