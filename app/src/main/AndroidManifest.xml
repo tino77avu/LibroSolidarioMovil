@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LibroSolidario">
         <activity
+            android:name=".ExplorarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompartirLibroActivity"
+            android:exported="false" />
+        <activity
             android:name=".InicioActivity"
             android:exported="false" />
         <activity
